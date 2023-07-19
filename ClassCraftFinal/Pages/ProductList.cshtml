@@ -1,0 +1,48 @@
+﻿@page
+@model ClassCraftFinal.Pages.ProductListModel
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h1> Product List</h1>
+<div class="row products">
+    @foreach (var product in Model.Products)
+        {
+        <div class="card col-sm-6 col-md-4">
+            <div class="card-img" style="background-image: url('@product.Image');">
+            </div>
+            <div class="card-body text-center">
+                <h4 class="card-title">@product.Title</h4>
+            </div>
+        </div>
+    }
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Maker</th>
+            <th scope="col">Image</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Products)
+            {
+            <tr>
+                <th scope="row">@product.Id</th>
+                <td>@product.Maker</td>
+                @*Notie the code below will not work as we need to use the img element to display an image!*@
+                @*<td>@product.Image</td>*@
+                <td><img class="w-100" src="@product.Image" alt="Product Image"></td>
+                <td>@product.Title</td>
+                <td>@product.Description</td>
+                @* Using a ternary operator below: *@
+                <td>@(product.Ratings!=null ? Convert.ToInt32(product.Ratings.Count()): String.Empty)</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
