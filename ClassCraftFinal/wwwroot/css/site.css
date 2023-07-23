@@ -20,7 +20,14 @@ html {
 body {
   margin-bottom: 60px;
 }
-.card-img{
-    height:100px;
-    width:100px;
+.card-img {
+    height: 100px;
+    width: 100%;
+    object-fit:cover;
+}
+
+.list-img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
 }

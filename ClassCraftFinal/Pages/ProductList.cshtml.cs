@@ -11,7 +11,7 @@ namespace ClassCraftFinal.Pages
     {
         public JsonFileProductService ProductService;
 
-        public IEnumerable<Product> Products { get; private set; } = default!;
+        public IEnumerable<Fruit> Fruits { get; private set; } = default!;
 
        public ProductListModel(JsonFileProductService productService)
         {
@@ -21,7 +21,7 @@ namespace ClassCraftFinal.Pages
 
         public void OnGet()
         {
-            Products = ProductService.GetProducts();
+            Fruits = ProductService.GetProducts();
         }
     }
 }

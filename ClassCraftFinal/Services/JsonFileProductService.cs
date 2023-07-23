@@ -16,12 +16,12 @@ namespace ClassCraftFinal.Services
         public IWebHostEnvironment WebHostEnvironment { get; }
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json");
 
-        //this <product> refers to the Product.cs under Models
-        public IEnumerable<Product> GetProducts()
+        //this <Fruit> refers to the Fruit.cs under Models
+        public IEnumerable<Fruit> GetProducts()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
 
-            return JsonSerializer.Deserialize<Product[]>(jsonFileReader.ReadToEnd(),
+            return JsonSerializer.Deserialize<Fruit[]>(jsonFileReader.ReadToEnd(),
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
