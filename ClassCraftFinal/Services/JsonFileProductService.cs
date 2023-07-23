@@ -14,7 +14,7 @@ namespace ClassCraftFinal.Services
         }
 
         public IWebHostEnvironment WebHostEnvironment { get; }
-        private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json");
+        private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "fruits.json");
 
         //this <Fruit> refers to the Fruit.cs under Models
         public IEnumerable<Fruit> GetProducts()
