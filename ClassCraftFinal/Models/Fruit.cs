@@ -7,16 +7,16 @@ namespace Assignment2.Models
 	public class Fruit
     {
 
-  // {
-  //  "name": "apple",
-  //  "color": "red",
-  //  "img": "https://images.unsplash.com/photo-1590005354167-6da97870c757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=881&q=80",
-  //  "taste": "sweet",
-  //  "origin": "Kazakhstan"
-  //}
+        // {
+        //  "name": "apple",
+        //  "color": "red",
+        //  "img": "https://images.unsplash.com/photo-1590005354167-6da97870c757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=881&q=80",
+        //  "taste": "sweet",
+        //  "origin": "Kazakhstan"
+        //}
 
-
-    public string? Name { get; set; }
+        //Defining all properties in Fruit class
+        public string? Name { get; set; }
         public string? Color { get; set; }
 
         [JsonPropertyName("img")]
