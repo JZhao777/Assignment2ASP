@@ -1,11 +1,11 @@
 ﻿using System;
-using ClassCraftFinal.Models;
-using ClassCraftFinal.Services;
+using Assignment2.Models;
+using Assignment2.Services;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ClassCraftFinal.Pages
+namespace Assignment2.Pages
 {
     public class ProductListModel : PageModel
     {

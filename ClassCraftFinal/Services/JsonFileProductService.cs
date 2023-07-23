@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
-using ClassCraftFinal.Models;
+using Assignment2.Models;
 using Microsoft.AspNetCore.Hosting;
 
-namespace ClassCraftFinal.Services
+namespace Assignment2.Services
 {
 	public class JsonFileProductService
 	{
