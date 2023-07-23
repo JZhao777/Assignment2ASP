@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace ClassCraftFinal.Models
+namespace Assignment2.Models
 {
 	public class Fruit
     {

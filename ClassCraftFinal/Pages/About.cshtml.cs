@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ClassCraftFinal.Pages
+namespace Assignment2.Pages
 {
 	public class AboutModel : PageModel
     {

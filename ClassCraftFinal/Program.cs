@@ -1,8 +1,8 @@
-﻿using ClassCraftFinal.Models;
-using ClassCraftFinal.Services;
+﻿using Assignment2.Models;
+using Assignment2.Services;
 using System.Text.Json;
 
-namespace ClassCraftFinal;
+namespace Assignment2;
 
 public class Program
 {

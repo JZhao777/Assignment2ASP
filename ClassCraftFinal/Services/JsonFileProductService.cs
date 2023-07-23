@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
-using ClassCraftFinal.Models;
+using Assignment2.Models;
 using Microsoft.AspNetCore.Hosting;
 
-namespace ClassCraftFinal.Services
+namespace Assignment2.Services
 {
 	public class JsonFileProductService
 	{
@@ -14,7 +14,7 @@ namespace ClassCraftFinal.Services
         }
 
         public IWebHostEnvironment WebHostEnvironment { get; }
-        private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json");
+        private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "fruits.json");
 
         //this <Fruit> refers to the Fruit.cs under Models
         public IEnumerable<Fruit> GetProducts()
